@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK Food Manufacturer Directory | Food Co-Packers & SALSA Certified Producers</title>
+    <meta name="description" content="Find UK food manufacturers and co-packers for small brands. SALSA certified, BRC approved producers. Pickles, sauces, jams, and more.">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="canonical" content="https://foodmanufacturingdirectory.pro">
+    <meta property="og:title" content="UK Food Manufacturer Directory | Find Food Co-Packers">
+    <meta property="og:description" content="Connect with SALSA & BRC certified food manufacturers in the UK. For pickles, sauces, jams, and specialty foods.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://foodmanufacturingdirectory.pro">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="UK Food Manufacturer Directory">
+    <meta name="twitter:description" content="Find certified food co-packers in the UK. Pickles, sauces, jams, specialty foods.">
+    
+    <!-- JSON-LD Structured Data: ItemList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "UK Food Manufacturer Directory",
+      "description": "Directory of food manufacturers and co-packers in the UK",
+      "url": "https://foodmanufacturingdirectory.pro",
+      "itemListElement": []
+    }
+    </script>
+    
+    <!-- JSON-LD Structured Data: WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Food Manufacturing Directory",
+      "url": "https://foodmanufacturingdirectory.pro",
+      "description": "Find SALSA and BRC certified food manufacturers and co-packers in the UK",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://foodmanufacturingdirectory.pro/?search={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <style>
+        :root {
+            --pink: #FF1493;
+            --pink-light: #FFB6C1;
+            --green: #6B8E23;
+            --green-light: #8FBC8F;
+            --cream: #FFF8E7;
+            --charcoal: #2C3E50;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--cream);
+            color: var(--charcoal);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--pink) 0%, var(--pink-light) 100%);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-top: 4px solid var(--green);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--pink);
+        }
+        
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .category-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-left: 4px solid var(--pink);
+            transition: transform 0.2s;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-4px);
+        }
+        
+        .category-card h3 {
+            color: var(--green);
+            margin-bottom: 0.5rem;
+        }
+        
+        .featured {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .featured h2 {
+            color: var(--pink);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--green-light);
+            padding-bottom: 0.5rem;
+        }
+        
+        .manufacturer {
+            padding: 1.5rem;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            background: #fafafa;
+        }
+        
+        .manufacturer h3 {
+            color: var(--charcoal);
+            margin-bottom: 0.5rem;
+        }
+        
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 0.5rem 0;
+        }
+        
+        .tag {
+            background: var(--green-light);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+        
+        .tag-pink {
+            background: var(--pink-light);
+        }
+        
+        .cta {
+            background: linear-gradient(135deg, var(--green) 0%, var(--green-light) 100%);
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 12px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        .cta h2 {
+            margin-bottom: 1rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--pink);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+        
+        footer {
+            background: var(--charcoal);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .newsletter {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            text-align: center;
+            border: 2px solid var(--pink-light);
+        }
+        
+        .newsletter input {
+            padding: 0.75rem 1rem;
+            border: 2px solid #ddd;
+            border-radius: 50px;
+            width: 300px;
+            max-width: 100%;
+            margin-right: 0.5rem;
+        }
+        
+        @media (max-width: 600px) {
+            h1 { font-size: 1.75rem; }
+            .newsletter input { width: 100%; margin-bottom: 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🇬🇧 UK Food Manufacturer Directory</h1>
+        <p class="tagline">Find co-packers & manufacturers for your food brand</p>
+    </header>
+    
+    <div class="container">
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number">15+</div>
+                <div>Verified Manufacturers</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">£0.50</div>
+                <div>From per unit</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">100%</div>
+                <div>UK Based</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">SALSA</div>
+                <div>& BRC Certified</div>
+            </div>
+        </div>
+        
+        <div class="categories">
+            <div class="category-card">
+                <h3>🥒 Co-Packers</h3>
+                <p>Manufacturers who produce your recipe under your brand. From pickles to sauces.</p>
+            </div>
+            <div class="category-card">
+                <h3>🏭 Food Incubators</h3>
+                <p>Shared kitchens and small-batch facilities perfect for startups.</p>
+            </div>
+            <div class="category-card">
+                <h3>🧪 Certification Guide</h3>
+                <p>SALSA vs BRC explained. What you need for retail vs markets.</p>
+            </div>
+            <div class="category-card">
+                <h3>💰 Cost Calculator</h3>
+                <p>Understand MOQs, setup fees, and per-unit costs before you commit.</p>
+            </div>
+        </div>
+        
+        <div class="featured">
+            <h2>Featured Manufacturers</h2>
+            
+            <div class="manufacturer">
+                <h3>The Real Pickle Company</h3>
+                <div class="tags">
+                    <span class="tag">Pickles</span>
+                    <span class="tag">Chutneys</span>
+                    <span class="tag">SALSA Certified</span>
+                    <span class="tag tag-pink">Startup Friendly</span>
+                </div>
+                <p>Specialists in organic and natural pickles. Flexible on recipes and MOQs. Perfect for brands scaling from kitchen to commercial.</p>
+            </div>
+            
+            <div class="manufacturer">
+                <h3>Kilby's</h3>
+                <div class="tags">
+                    <span class="tag">100+ Years</span>
+                    <span class="tag">Traditional</span>
+                    <span class="tag">BRC Certified</span>
+                    <span class="tag">Medium MOQ</span>
+                </div>
+                <p>Heritage manufacturer with over a century of experience. Traditional recipes and methods. Great for brands wanting heritage association.</p>
+            </div>
+            
+            <div class="manufacturer">
+                <h3>The Food Incubator</h3>
+                <div class="tags">
+                    <span class="tag">Shared Kitchen</span>
+                    <span class="tag">Very Small MOQ</span>
+                    <span class="tag tag-pink">Startups</span>
+                    <span class="tag">Mentorship</span>
+                </div>
+                <p>Designed specifically for food startups. Very flexible MOQs and includes mentorship. Perfect for your first commercial production run.</p>
+            </div>
+        </div>
+        
+        <div class="newsletter">
+            <h2>📬 Get the Full Directory</h2>
+            <p>Join 200+ food founders. Get the complete manufacturer list + new additions.</p>
+            <form onsubmit="event.preventDefault(); alert('Thanks! We\'ll send you the full directory soon.');">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn">Get Access</button>
+            </form>
+        </div>
+        
+        <div class="cta">
+            <h2>Are You a Manufacturer?</h2>
+            <p>Get listed in our directory. Reach 100s of small food brands looking for production partners.</p>
+            <a href="#" class="btn">List Your Business</a>
+        </div>
+        
+        <div class="featured">
+            <h2>How to Choose a Manufacturer</h2>
+            <ol style="padding-left: 1.5rem;">
+                <li style="margin-bottom: 1rem;"><strong>Assess Your Needs:</strong> What's your current batch size? Target monthly volume? Budget per unit?</li>
+                <li style="margin-bottom: 1rem;"><strong>Ask Key Questions:</strong> MOQs, certifications, startup experience, payment terms, lead times.</li>
+                <li style="margin-bottom: 1rem;"><strong>Site Visit:</strong> Check facility cleanliness, food safety, equipment suitability.</li>
+                <li style="margin-bottom: 1rem;"><strong>Trial Run:</strong> Start with small test batch. Check quality consistency and packaging.</li>
+            </ol>
+        </div>
+    </div>
+    
+    <footer>
+        <p>🇬🇧 UK Food Manufacturer Directory</p>
+        <p style="margin-top: 0.5rem; opacity: 0.8;">Helping food startups find their perfect production partner</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">
+            <a href="#" style="color: var(--pink-light);">About</a> • 
+            <a href="#" style="color: var(--pink-light);">Submit Manufacturer</a> • 
+            <a href="#" style="color: var(--pink-light);">Contact</a>
+        </p>
+    </footer>
+  <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

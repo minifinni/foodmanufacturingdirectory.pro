@@ -1,0 +1,9 @@
+{
+  "name": "uk-food-manufacturers-directory",
+  "version": "1.0.0",
+  "description": "Directory of UK food manufacturers for small brands",
+  "scripts": {
+    "dev": "npx serve .",
+    "deploy": "npx vercel --prod"
+  }
+}

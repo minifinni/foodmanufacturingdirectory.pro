@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://foodmanufacturingdirectory.pro/sitemap.xml
